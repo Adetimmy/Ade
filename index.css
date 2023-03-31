@@ -350,8 +350,8 @@ main footer {
   
   .about__footer {
   position: fixed;
-  transform: rotate(90deg) translate(-35px, 0px);
-  right:-3rem;
+  transform: rotate(90deg) translate(-55px, 0px);
+  right:-5rem;
   }
   .about__container .social {
   display: flex;
