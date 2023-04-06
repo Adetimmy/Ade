@@ -1,0 +1,201 @@
+:root{
+    --color-warning:#f7c94b;
+    --color-danger:rgba(18, 113, 227, 1);
+    --color-danger-variant:rgba(247, 88, 66, 0.4);
+    --color-white:#fff;
+    --color-light::rgba(255, 255, 255, 0.7);
+    --color-black:#000;
+    --color-bg:whitesmoke;
+    --color-bg1:rgba(18, 113, 227, 1);
+    --color-bg2:rgba(18, 113, 227, 1);
+
+    --container-width-lg:80%;   /*large devices*/
+    --container-width-md:90%;  /*medium devices*/
+     --container-width-sm:94%; /* small devices(phones) */
+
+    --transition:all 400ms ease;    
+}
+.about__landing p, .about__landing a{
+    font-weight: 600;
+}
+.about__landing form{
+    font-weight: 600;
+}
+.about__landing{
+    background: var(--color-bg1);
+    padding:4rem;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 4rem;
+    height: 25rem;
+    border-radius: 1rem;
+    width:80%;
+    margin: 13rem auto;
+}
+aside{
+     background: var(--color-bg2);
+     padding: 1.5rem;
+     position: relative;
+     bottom: 11rem;
+     border-radius: 20px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+}
+aside img{
+    width:  12rem;
+    margin-bottom: 2rem;
+}
+aside h2{
+    font-size: 40px;
+    align-self: center;
+    margin-bottom: 20px;
+}
+aside p{
+    width: 100%;
+    margin-bottom: 2rem;
+}
+.ade{
+    width: 120px;
+    height: 120px;
+    border-radius: 70%;
+}
+.contact__icons{
+    display: flex;
+    gap: 9px;  
+    align-self: flex-start; 
+}
+.contact__icons img{
+    padding: 8px;
+    width:2.5rem;
+    background: var(--color-bg);
+    border-radius: 50%;
+
+}
+.info__contacts{
+    align-self: flex-start;
+}
+.info__contacts img{
+    width:2rem;
+    margin-right: 12px;
+}
+.infot{
+    display: flex;
+    justify-content: start;
+    margin-bottom: 0;
+}
+form button{
+display: block;
+}
+input[type=name]{
+    background: var(--color-bg);
+    width: 45%;
+    height: 40px;
+    margin-bottom: 5px;
+}
+input[type=email]{
+    background: var(--color-bg);
+    width: 91%;
+    height: 40px;
+    margin-bottom: 5px;
+}
+textarea{
+    background: var(--color-bg);
+    width: 91%;
+    height: 150px;
+}
+button[type=submit]{
+    width: 150px;
+    height: 40px;
+    margin-top: 10px;
+    background:var(--color-bg);
+    color: black;
+    border-radius: 5px;
+}
+button[type=submit]:hover{
+    border:1px solid cyan;
+    background: transparent;
+    color: white;
+}
+input,textarea{
+    color: aliceblue;
+    padding:10px;
+    
+}
+@media screen and (max-width:1024px) {
+    .about__landing{
+        padding:2rem;
+        gap: 2rem;
+        height: auto;
+        align-items: center;
+        width:var(--container-width-md);   
+       
+    }
+    aside{
+        padding:.5rem;
+        width: auto;
+        top:0;
+   }
+.info__container h2{
+    font-size: 25px;
+}
+   aside a{
+       margin: 0;
+    font-size:9px;
+}
+aside p{
+    text-align: justify;
+    width: 100%;
+    font-size:12px;
+}
+.contact__icons img{
+    width: 30px;
+}
+.infot img{
+    width:12px;
+}
+.ade{
+    margin-left: calc(50% - 2rem);
+    width: 70px;
+    height: 70px;
+}
+}
+
+@media screen and (max-width:600px) {
+    .ad{
+        top: 10px;
+        position: relative;
+        width: 100%;
+    }
+    .ade{
+        position: relative;
+        margin-left: calc(50% - 2rem);
+    }
+    .about__landing{
+        grid-template-columns: 100%;
+        padding:.5rem;
+        margin-bottom: -2rem;
+        width:var(--container-width-sm);   
+    }
+    
+    form{
+        width: 97.5vw;
+    }
+form button{
+    margin-bottom: 50px;
+}
+.info__container{
+    margin-top: 20px;
+}
+.about__section{
+    position: relative;
+    top: -120px;
+}
+footer{
+    top:0;
+}
+input[type=name]{
+    width: 91.5%;
+}
+
+}
